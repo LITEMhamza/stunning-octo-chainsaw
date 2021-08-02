@@ -1,21 +1,146 @@
-MIT License
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferences">
+    <PreferenceCategory android:title="Appearance Settings">
+        <SwitchPreference
+            android:title="Show Podcasts Tab"
+            android:key="podcast_tab"
+            android:summary="Disable if you want to hide the podcasts tab. Just music, just hardcore."
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:title="Show Ads Tab"
+            android:key="ads_tab"
+            android:summary="Enable if you want to see ads. But why...?"
+            android:defaultValue="false" />
+        <SwitchPreference
+            android:title="Show Search Tab"
+            android:key="search_tab"
+            android:summary="Disable if you don't want to see search tab. No search - no problems with finding songs ðŸ‘"
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:title="Enable Christmas Mode"
+            android:key="xmas"
+            android:summary="To activate it, go to Display/Player settings. Requires a restart!"
+            android:defaultValue="false" />
+        <SwitchPreference
+            android:title="Hide Tab Labels"
+            android:key="icons_tab"
+            android:defaultValue="false" />
+        <SwitchPreference
+            android:title="Hide useless settings items"
+            android:key="useless_inf"
+            android:summary="Disables useless items, like Rate app and Help"
+            android:defaultValue="false" />
+        <SwitchPreference
+            android:title="Transfer Your Music"
+            android:key="transfer"
+            android:summary="Official collaboration with TuneMyMusic. Test Feature."
+            android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Developer Features">
+        <Preference
+            android:clickable="false"
+            android:title="Warning!"
+            android:summary="The features below are made exclusively for developers, and may break the application. Only use these if you know what you're doing!" />
+        <SwitchPreference
+            android:title="Show Network Stats"
+            android:key="showNetStat"
+            android:defaultValue="false" />
+        <SwitchPreference
+            android:title="Force all test features"
+            android:key="forceallfeatures"
+            android:defaultValue="false" />
+        <SwitchPreference
+            android:title="Force debug mode"
+            android:key="forcedebugfeatures"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About">
+        <Preference
+            android:persistent="false"
+            android:title="Our channel"
+            android:summary="Main channel with mods">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/s/appsmodification" />
+        </Preference>
+        <Preference
+            android:persistent="false"
+            android:title="Our chat"
+            android:summary="Discussion of this and other modifications from Appsmodification Team">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/appsmodchat" />
+        </Preference>
+        <Preference
+            android:persistent="false"
+            android:title="gdlbo"
+            android:summary="All features, Premium mod and etc. (ã¥ï½¡â—•â€¿â€¿â—•ï½¡)ã¥">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/gdlbo" />
+        </Preference>
+        <Preference
+            android:persistent="false"
+            android:title="F0x1d"
+            android:summary="Thanks for some features and OTA">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/F0x1d" />
+        </Preference>
+    </PreferenceCategory>
+        <PreferenceCategory android:title="Translators">
+        <Preference
+            android:persistent="false"
+            android:title="oplexz"
+            android:summary="Russian language">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/oplexz" />
+        </Preference>
+        <Preference
+            android:persistent="false"
+            android:title="YOUR NICKNAME"
+            android:summary="*LANGUAGE* language">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/YOUR LINK TO TELEGRAM" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Extra">
+        <SwitchPreference
+            android:title="Employee features"
+            android:key="employee_feature"
+            android:summary="Activates hidden features in Deezer Labs and unlocks all features in developer menu. I recommend enabling this feature."
+            android:defaultValue="false" />
+        <SwitchPreference
+            android:title="Developer Menu"
+            android:key="debug_menu"
+            android:summary="I don't recommend enabling this feature. Meant for app testing."
+            android:defaultValue="false" />
+        <SwitchPreference
+            android:title="Deezer metrics"
+            android:key="deez_metrics"
+            android:summary="Personalization of ads and Deezer usage statistics. You can also disable unwanted statistics collection in privacy settings of Deezer"
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:title="Experimental AdBlock"
+            android:key="adblock"
+            android:defaultValue="true" />
+        <SwitchPreference
+            android:title="Auto updates"
+            android:key="auto_updates"
+            android:summary="Disable if you don't want to get updates :("
+            android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Version">
+        <Preference
+            android:clickable="false"
+            android:title="xDeezer (eXtended Deezer)"
+            android:summary="Release v1.4 | Based on 6.2.32.56 (6211504)" />
+    </PreferenceCategory>
+    <Preference
+        android:clickable="false"
+        android:title="(ãƒŽà² ç›Šà² )ãƒŽå½¡â”»â”â”»" />
+</PreferenceScreen>
 
-Copyright (c) 2021 LITEMhamza
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
